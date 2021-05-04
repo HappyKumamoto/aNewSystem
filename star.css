@@ -1,0 +1,41 @@
+body{
+    background: #2F4F4F;
+}
+
+#titles{
+   color:#FFFF00;
+   position: absolute;
+   width: 20em;
+   height: 50em;
+   bottom: 0;
+   left: 50%;
+   margin-left: -9em;
+   font-size: 400%;
+   font-weight: bold;
+   text-align: center;
+   overflow: hidden;
+   transform-origin: 50% 100%;
+   transform: perspective(300px) rotateX(25deg);
+}
+
+#titles:after{
+   position: absolute;
+   content: ' ';
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 60%;
+   background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+   pointer-events: none;
+}
+
+#titlecontent{
+   position: absolute;
+   top: 100%;
+   animation: scroll 200s linear 4s infinite;
+}
+
+@keyframes scroll {
+   0% { top: 100%; }
+   100% { top: -170%; }
+}
