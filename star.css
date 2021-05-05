@@ -32,7 +32,7 @@ body{
 #titlecontent{
    position: absolute;
    top: 100%;
-   animation: scroll 150s linear 4s infinite;
+   animation: scroll 150s linear 2s infinite;
 }
 
 @keyframes scroll {
